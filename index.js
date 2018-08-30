@@ -29,7 +29,9 @@ tree.insert('x');
 
 console.log(tree.height());// 4
 console.log(tree.toArray());// ['a','b','c','x','y','z']
-
+console.log(tree.exists('a'));
+console.log(tree.exists('z'));
+console.log(tree.exists('e'));
 try{
     tree.insert('x');
 } catch({message}){

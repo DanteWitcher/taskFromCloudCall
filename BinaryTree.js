@@ -208,7 +208,15 @@ exports.BinaryTree = class BinaryTree {
         find(node);
         return arr.sort();
     }
-    
+    exists(str) {
+        let arr = this.toArray();
+        if (~arr.indexOf(str)) {
+            return true;
+        }
+        else { 
+            return false;
+        }
+    }
 };
 
 exports.cmp = cmp;
